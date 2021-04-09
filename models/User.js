@@ -30,15 +30,13 @@ const UserSchema = new Schema({
     toJSON: {
         virtuals: true
     },
-    id: false //not sure if i need htis ornot 
+    id: false 
 });
 
-// UserSchema.virtual('friendCount').get(function() {
-//     return this.friends.reduce(total, friend) => total + fri
-// }
-
-//get total count of friends
-
+//get total count of thoughts
+UserSchema.virtual('thoughtCount').get(function() {
+  return this.thoughts.length;
+})
 
 //create the user model using the UserSchema
 const User = model('User', UserSchema);
