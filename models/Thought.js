@@ -1,8 +1,9 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model, Types } = require("mongoose");
 const dateFormat = require("../utils/dateFormat");
 
 const ReactionSchema = new Schema(
   {
+      //set custom id to avoid confusion with parent thought_id
     reactionId: {
       type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId(),
@@ -24,7 +25,6 @@ const ReactionSchema = new Schema(
   },
   {
     toJSON: {
-      virtuals: true,
       getters: true,
     },
     id: false,
@@ -48,6 +48,7 @@ const ThoughtScema = new Schema(
       type: String,
       required: true,
     },
+    //use ReactionSchema to validate data for a reaction
     reactions: [ReactionSchema],
   },
   {
