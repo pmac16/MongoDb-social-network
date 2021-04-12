@@ -9,9 +9,11 @@
 
 ## User Story
 
-`AS A social media start up <br>
-I WANT an API for my social network that uses a NoSQL database <br>
-SO THAT my website can handle large amounts of unstructured data`
+```
+AS A social media start up 
+I WANT an API for my social network that uses a NoSQL database 
+SO THAT my website can handle large amounts of unstructured data
+```
 
 ## Description
 
@@ -22,9 +24,9 @@ Through this application, a user is able to create a user, update a user, delete
 
   * [Installation](#installation)
 
-  * [Database Setup](#database)
-
   * [Usage](#usage)
+
+  * [Walkthrough](#walkthrough)
 
   * [Contribution](#contribution)
 
@@ -42,25 +44,7 @@ Then clone this repository and navigate to the local folder via command line. Ne
 
 * [MongoDB](https://www.mongodb.com/)
 
-* [MySQL](https://dev.mysql.com/)
-
-* [Sequelize](https://www.npmjs.com/package/sequelize)
-
-## Database Setup
-
-In MySQL, create a database by the name of `mailflyer_db`. Then create a .env file at the root of your local repository and paste in the below text, replacing ***your_username*** and ***your_password*** with your MySQL username and password.
-
-```
-DB_NAME='mailflyer_db'
-DB_USER='your_username'
-DB_PW='your_password'
-```
-
-Now seed the database by running the following command:
-
-```
-node seeds/index
-```
+* [Mongoose](https://mongoosejs.com/)
 
 ## Usage
 
@@ -70,20 +54,19 @@ Start the server using the following command at the root of your local repositor
 npm start
 ```
 
-Once there server is running, you can now access the application by pasting the following address in your web browser.
+Once there server is running, you can now access the routes in the application using Insomnia Core or other API testers.
 
-```
-localhost:3001
-```
+## Walkthrough
 
-On the landing page you can create your account, and now you are all set to start creating flyers to send to friends and family.
+A video walking through the application can be found [here](https://drive.google.com/file/d/12k-Dv-TCNehXs1UZCj20HjU-1f6C0A4-/view?usp=sharing).
+
 
 ## Contribution 
 
-  All contributions are welcome. Please visit the [issues](https://github.com/haydenkd/MailFlyer/issues) tab  to contribute.
+  All contributions are welcome. Please visit the [issues](https://github.com/pmac16/MongoDb-social-network/issues) tab  to contribute.
 
  ## Questions
 
-  If you have additional questions, please email us at priya.macpherson@gmail.com.
+  If you have additional questions, please visit me on [Github](https://github.com/pmac16)
 
   
